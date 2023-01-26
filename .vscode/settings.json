@@ -1,0 +1,34 @@
+{
+  "rubyLsp.enabledFeatures": {
+    "documentHighlights": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "formatting": true,
+    "diagnostics": true,
+    "codeActions": true
+  },
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "localhost",
+      "database": "postgres",
+      "username": "postgres",
+      "password": "postgres"
+    },
+    {
+      "previewLimit": 50,
+      "server": "0.0.0.0",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "pg",
+      "database": "postgres",
+      "username": "postgres",
+      "password": "postgres"
+    }
+  ]
+}

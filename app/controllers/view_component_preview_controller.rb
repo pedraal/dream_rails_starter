@@ -1,0 +1,2 @@
+class ViewComponentPreviewController < ViewComponentsController
+end

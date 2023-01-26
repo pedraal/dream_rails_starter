@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+processes_runner=foreman
+
+# expose `RAILS_PROCESSES_RUNNER` env var to override processes runner. eg: `RAILS_PROCESSES_RUNNER=overmind` in .bashrc/.zshrc
+if [ "$RAILS_PROCESSES_RUNNER" ]; then
+  processes_runner=$RAILS_PROCESSES_RUNNER
+elif ! command -v foreman &>/dev/null; then
+  echo "Installing foreman..."
+  gem install foreman
+fi
+rm -f ./.overmind.sock # remove overmind socket if exists
+$processes_runner start -f Procfile.dev "$@"

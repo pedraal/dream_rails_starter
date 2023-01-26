@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DreamRails</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= vite_client_tag %>
+    <%= vite_typescript_tag 'application' %>
+  </head>
+  <body class="dark:bg-slate-900 dark:text-white p-4 min-h-screen debug-screens">
+    <%= yield %>
+  </body>
+</html>
