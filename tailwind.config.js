@@ -9,17 +9,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('daisyui'),
     require('tailwindcss-debug-screens'),
   ],
-  daisyui: {
-    styled: true,
-    themes: false,
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: '',
-    darkTheme: 'dark',
-  },
 }
